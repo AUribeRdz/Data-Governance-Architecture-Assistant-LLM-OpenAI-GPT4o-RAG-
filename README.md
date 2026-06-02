@@ -1,7 +1,10 @@
-Data Governance Architecture Assistant (LLM-OpenAI-GPT4o-RAG)
+1. Data governance architecture assistant — LLM + RAG A context-aware chatbot that answers questions about data governance architecture by retrieving relevant knowledge from a curated document corpus before generating responses with GPT-4o. ## Architecture 1. Documents ingested, chunked, and embedded into a vector store 
 
-This solution has been developed for a well-known software development company who is looking at implementing LLMs into their enterprise cloud Data Governance platform to provide guidance to data enablers and practitioners (data stewards and data architects) who define and operationalize the governance framework.
+2. User query embedded and matched against the corpus (semantic search) 
 
-It was built implementing Retrieval Augmented Generation (RAG) to create the context-aware chatbot on current company's policy and procedures related to Data Governance Architecture.
+3. Top-k chunks injected into GPT-4o prompt as grounded context
 
-This file is the SandBox version with output on this same Jupyter Notebook environment.
+4. Response generated with citations and confidence indicators
+5.
+   ## Key design decisions - Chunk size and overlap tuned for governance documentation specificity - System prompt enforces citation discipline and prevents hallucination - Retrieval evaluated using relevance scoring before generation
+   ## Tech stack Python · OpenAI GPT-4o API · LangChain / custom retrieval · Vector store · Jupyter Notebook ## Skills demonstrated RAG pipeline design · Prompt engineering · LLM API integration · Responsible AI (hallucination control) · Knowledge retrieval
