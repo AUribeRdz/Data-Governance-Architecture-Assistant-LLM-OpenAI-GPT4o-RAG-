@@ -1,4 +1,4 @@
-# Data governance architecture assistant — LLM + RAG A context-aware chatbot that answers questions about data governance architecture by retrieving relevant knowledge from a curated document corpus before generating responses with GPT-4o. 
+# Data governance architecture assistant - LLM + RAG A context-aware chatbot that answers questions about data governance architecture by retrieving relevant knowledge from a curated document corpus before generating responses with GPT-4o. 
 
 ## Architecture 
 1. Documents ingested, chunked, and embedded into a vector store
